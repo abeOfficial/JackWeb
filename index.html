@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Minecraft Server</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./staff.html">Staff</a></li>
+                <li><a href="./vote.html">Vote</a></li>
+                <li><a href="#" id="discord-link">Discord</a></li>
+                <li><a href="#" id="store-link">Store</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <div class="online-count" onclick="copyIP()">
+                    <span class="pulse"></span>
+                    <span id="playerCount">...</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Minecraft Server</h1>
+                <p>Join us for an unforgettable adventure in our unique Minecraft world!</p>
+                <div class="hero-buttons">
+                    <a href="#" class="join-server-btn" onclick="copyIP()">Join The Server</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="about-us-content">
+                <div class="about-us-image">
+                    <img id="about-us-img" src="" alt="Minecraft characters">
+                </div>
+                <div class="about-us-text">
+                    <h2>About Us</h2>
+                    <p>Welcome to our Minecraft server! We offer a unique gaming experience with custom plugins, exciting game modes, and a friendly community.</p>
+                    <p>Whether you're a builder, adventurer, or competitor, there's something here for everyone. Join us and start your journey today!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-games">
+            <h2>Our Servers</h2>
+            <div class="games-container" id="game-modes-container">
+                <!-- Game modes will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section class="join-community">
+            <div class="join-community-content">
+                <div class="join-community-text">
+                    <h2>Join the Community</h2>
+                    <p>Become part of our vibrant Minecraft community! Connect with other players, share your creations, and stay updated on server news and events.</p>
+                    <a href="#" class="join-discord-btn" id="join-discord-btn">Join Discord</a>
+                </div>
+                <div class="join-community-image">
+                    <img id="community-img" src="" alt="Community Image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Play Now</h3>
+            <p>Join our server and start your adventure today!</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links</h3>
+            <a href="#" id="footer-discord-link">Discord</a>
+            <a href="#" id="footer-store-link">Store</a>
+        </div>
+        <div class="footer-section">
+            <h3>Store</h3>
+            <p>Support the server and get awesome perks!</p>
+            <a href="#" class="cta-button" id="footer-shop-now">Shop Now</a>
+        </div>
+        <div class="footer-section copyright">
+            <p>&copy; 2024 <span id="server-name"></span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./javascript/particle-config.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
